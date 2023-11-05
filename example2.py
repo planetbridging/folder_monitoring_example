@@ -25,6 +25,7 @@ class EventHandler(pyinotify.ProcessEvent):
 config = configparser.ConfigParser()
 config.read('monitor_config.ini')
 monitor_dir = config.get('monitor', 'directory')
+print(monitor_dir)
 
 # Function to process existing files in the directory
 def process_existing_files(directory):
